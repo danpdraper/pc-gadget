@@ -96,3 +96,8 @@ parts:
       # We need to install directly in the project dir as snapcraft checks there
       # for gadget.yaml instead of looking first at the prime folder.
       install -m 644 gadget-"${CRAFT_ARCH_BUILD_FOR}".yaml "${CRAFT_PROJECT_DIR}"/gadget.yaml
+  cloud-init:
+    plugin: nil
+    source: .
+    override-build: |
+      install -m 644 cloud.conf "${CRAFT_PART_INSTALL}"/cloud.conf

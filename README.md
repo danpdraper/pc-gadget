@@ -1,3 +1,13 @@
+**This is a private fork of https://github.com/canonical/pc-gadget.**
+
+To build the gadget snap, run the following from this repository's root:
+
+```
+$ make gadget_snap
+```
+
+--- Begin content from https://github.com/canonical/pc-gadget ---
+
 # 64bit PC Gadget Snap
 
 This repository contains the official Ubuntu Core gadget snap for 64bit

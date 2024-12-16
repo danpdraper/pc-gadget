@@ -1,3 +1,6 @@
+defaults:
+  system:
+    service.ssh.disable: false
 volumes:
   pc:
     schema: gpt
